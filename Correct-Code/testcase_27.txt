@@ -1,0 +1,56 @@
+module myprogram;
+  const
+    max=100;
+	pi=3.14;
+  var
+    m,num:integer;
+	x,total:real;
+	
+  procedure compute;
+    var
+	  n:integer;
+	  
+	procedure one;
+	  var 
+	    m:integer;
+	  begin
+	    m:=1;
+	    num:=n+m;
+	    writeint(m,num);
+	  end one; 
+	  
+	begin
+	  readint(n);
+	  while n |=100 do
+	    sum :=sum*n;
+	    n :=n+1;
+	  end;
+	  call one;
+	  writeint(n);
+	end compute;
+	
+	procedure test;
+	begin
+	  m:=1;
+	  loop
+	    m:=m+1;
+	  until m>10;
+	  total:=n+m;
+	  writereal(total);
+	end test;
+	
+  begin
+    readint(num);
+	readreal(x);
+	if num<=max then
+	  num:=num+5;
+	  writeint(num);
+	else
+	  num :=num-5;
+	  writeint(num);
+	end;
+	writeint(num);
+	call compute;
+	writereal(x);
+	exit;
+  end myprogram.
