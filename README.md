@@ -6,7 +6,7 @@ The goal is to implement a parser in Java that can read, tokenize, and parse sou
 The parser will use an LL(1) parsing table to guide the parsing process.
 
 ## Grammer Rules:
-module-decl --> module-heading - declarations block name . 
+module-decl --> module-heading declarations block name . 
 
 module-heading --> module name ; 
 
